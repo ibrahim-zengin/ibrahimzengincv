@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #121212, #1e1e1e);
+    color: #e0e0e0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #33333399;
+}
+
+.header nav a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header nav a:hover {
+    color: #8b2232a2;
+    transition: 300ms all;
+
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    object-fit: cover;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.skill i {
+    color: #8b2231;
+    font-size: 1.5rem;
+}
+
+.skill-bar {
+    background-color: #333333d0;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.skill-bar-fill {
+    background-color: #8b22325a;
+    height: 100%;
+    width: 70%;
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+
+.timeline {
+    border-left: 2px solid #8b2231;
+    padding-left: 20px;
+}
+
+.timeline-entry {
+    margin-bottom: 30px;
+}
+
+.timeline-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.timeline-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.project {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-links a {
+    color: #6a6a6a;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.footer {
+background-color: #121212;
+padding: 20px;
+text-align: center;
+border-top: 1px solid #333;
+color: #b0b0b0;
+}
+
+.footer .social-icons {
+margin-top: 10px;
+}
+
+.footer .social-icons a {
+margin: 0 10px;
+color: #b0b0b0;
+text-decoration: none;
+font-size: 1.5rem;
+}
+
+.footer .social-icons a:hover {
+color: #8b2231;
+transition: 300ms all;
+}
+
+.nav {
+position: relative;
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+gap: 15px;
+}
+
+.nav-links li a {
+color: #b1b1b1;
+text-decoration: none;
+font-size: 1rem;
+}
+
+.nav-links li a:hover {
+color: #1e90ff;
+}
+
+.hamburger {
+display: none;
+cursor: pointer;
+color: #e0e0e0;
+font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+.nav-links {
+display: none;
+flex-direction: column;
+background-color: #121212;
+position: absolute;
+top: 100%;
+right: 0;
+width: 100%;
+padding: 20px;
+border-top: 1px solid #333;
+}
+
+.nav-links.active {
+display: flex;
+}
+
+.hamburger {
+display: block;
+}
+}
+
+
+
+
+
+.skills {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.skill {
+flex: 1 1 calc(33.33% - 15px);
+max-width: calc(33.33% - 15px);
+background-color: #1e1e1e;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 1rem;
+border: 1px solid #333;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+.skill {
+flex: 1 1 calc(50% - 15px);
+max-width: calc(50% - 15px);
+}
+}
+
+@media (max-width: 480px) {
+.skill {
+flex: 1 1 100%;
+max-width: 100%;
+}
+}
+
+html {
+scroll-behavior: smooth;
+}
